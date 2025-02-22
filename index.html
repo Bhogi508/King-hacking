@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethical Hacking Education Hub</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+            color: #fff;
+        }
+
+        .header {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(0,0,0,0.7);
+        }
+
+        .team-king {
+            font-size: 3rem;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1);
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: rainbow 3s ease infinite;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .whatsapp-btn, .join-btn {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .whatsapp-btn {
+            background: #25D366;
+            color: white;
+        }
+
+        .join-btn {
+            background: linear-gradient(90deg, #ff6b6b, #ff8e53);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .join-btn:hover::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.3), transparent);
+            animation: shine 1.5s;
+        }
+
+        @keyframes rainbow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        @keyframes shine {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .disclaimer {
+            background: rgba(255,0,0,0.1);
+            padding: 1rem;
+            border-left: 4px solid red;
+            margin: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="team-king">The Team King</h1>
+    </div>
+
+    <div class="content">
+        <div class="disclaimer">
+            <h3>Important Notice:</h3>
+            <p>This website provides educational content about cybersecurity and ethical hacking. All information is for legal and educational purposes only. Never engage in illegal hacking activities.</p>
+        </div>
+
+        <h2>Free Ethical Hacking Resources</h2>
+        <div class="cta-buttons">
+            <a href="#https://wa.me/923158479223?s=5" class="whatsapp-btn">Contact via WhatsApp</a>
+            <a href="#https://chat.whatsapp.com/H9ugcwsNShB8EzRIZ2BFw6" class="join-btn">Join Education Community</a>
+        </div>
+
+        <section>
+            <h3>Educational Content Categories:</h3>
+            <div class="card-container">
+                <!-- Add educational content cards here -->
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Add interactive features here
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                // Add your smooth scroll implementation
+            });
+        });
+    </script>
+</body>
+</html>
